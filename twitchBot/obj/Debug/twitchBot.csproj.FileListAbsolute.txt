@@ -1,0 +1,82 @@
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\twitchBot.exe.config
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\twitchBot.exe
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\twitchBot.pdb
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.Form1.resources
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.Properties.Resources.resources
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.csproj.GenerateResource.Cache
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.exe
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.pdb
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.csprojAssemblyReference.cache
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.csproj.CoreCompileInputs.cache
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Newtonsoft.Json.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Serilog.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Serilog.Extensions.Logging.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\SuperSocket.ClientEngine.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Core.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Core.Enums.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Core.Interfaces.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Core.Models.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Enums.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Helix.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Helix.Models.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Interfaces.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.Models.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.V5.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Api.V5.Models.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Client.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Client.Enums.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Client.Models.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.Communication.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\TwitchLib.PubSub.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\WebSocket4Net.dll
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Newtonsoft.Json.pdb
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Newtonsoft.Json.xml
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Serilog.xml
+D:\Files\VSprojects\twitchBot\twitchBot\bin\Debug\Serilog.Extensions.Logging.xml
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.csproj.CopyComplete
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.Form_settings.resources
+D:\Files\VSprojects\twitchBot\twitchBot\obj\Debug\twitchBot.first_launch.resources
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\twitchBot.exe.config
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\twitchBot.exe
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\twitchBot.pdb
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Newtonsoft.Json.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Serilog.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Serilog.Extensions.Logging.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\SuperSocket.ClientEngine.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Core.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Core.Enums.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Core.Interfaces.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Core.Models.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Enums.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Helix.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Helix.Models.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Interfaces.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.Models.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.V5.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Api.V5.Models.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Client.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Client.Enums.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Client.Models.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.Communication.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\TwitchLib.PubSub.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\WebSocket4Net.dll
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Newtonsoft.Json.pdb
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Newtonsoft.Json.xml
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Serilog.xml
+D:\Files\VSprojects\twitchBot for git\twitchBot\bin\Debug\Serilog.Extensions.Logging.xml
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.csprojAssemblyReference.cache
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.first_launch.resources
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.Form1.resources
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.Form_settings.resources
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.Properties.Resources.resources
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.csproj.GenerateResource.cache
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.csproj.CoreCompileInputs.cache
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.csproj.CopyComplete
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.exe
+D:\Files\VSprojects\twitchBot for git\twitchBot\obj\Debug\twitchBot.pdb
