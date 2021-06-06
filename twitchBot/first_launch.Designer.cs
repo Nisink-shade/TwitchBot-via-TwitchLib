@@ -62,7 +62,7 @@ namespace twitchBot
             this.button1.Location = new System.Drawing.Point(51, 133);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Далее";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -74,7 +74,7 @@ namespace twitchBot
             this.button_close.Location = new System.Drawing.Point(164, 0);
             this.button_close.Name = "button_close";
             this.button_close.Size = new System.Drawing.Size(20, 20);
-            this.button_close.TabIndex = 4;
+            this.button_close.TabIndex = 6;
             this.button_close.Text = "X";
             this.button_close.UseVisualStyleBackColor = true;
             this.button_close.Click += new System.EventHandler(this.button_close_Click);
@@ -96,7 +96,7 @@ namespace twitchBot
             this.textBox_bot_name.Location = new System.Drawing.Point(29, 66);
             this.textBox_bot_name.Name = "textBox_bot_name";
             this.textBox_bot_name.Size = new System.Drawing.Size(127, 20);
-            this.textBox_bot_name.TabIndex = 7;
+            this.textBox_bot_name.TabIndex = 2;
             // 
             // label2
             // 
@@ -112,7 +112,7 @@ namespace twitchBot
             this.textBox_oauth.Location = new System.Drawing.Point(30, 108);
             this.textBox_oauth.Name = "textBox_oauth";
             this.textBox_oauth.Size = new System.Drawing.Size(127, 20);
-            this.textBox_oauth.TabIndex = 9;
+            this.textBox_oauth.TabIndex = 3;
             // 
             // label3
             // 

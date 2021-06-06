@@ -20,6 +20,20 @@ namespace twitchBot
 {
     public partial class Form1 : Form
     {
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+
+        enum KeyModifier
+        {
+            None = 0,
+            Alt = 1,
+            Control = 2,
+            Shift = 4,
+            WinKey = 8
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -42,8 +56,11 @@ namespace twitchBot
 
             if (Properties.Settings.Default.type_of_saying == "!say") radioButton_say.Checked = true;
             else radioButton_all.Checked = true;
+
+            RegisterHotKey(this.Handle, 0, 2, Keys.F1.GetHashCode());
         }
 
+        #region variables
         public bool connection_status = false;
         public string form_size = "min";
         TwitchClient client = new TwitchClient();
@@ -58,8 +75,9 @@ namespace twitchBot
         SpeechSynthesizer speech = new SpeechSynthesizer();
         public string[] bad_words;
         public string sound_voice_status = "Озвучка сообщений выключена";
+        #endregion
 
-
+        #region connect
         private void button_connect_Click(object sender, EventArgs e)
         {
             if (connection_status == false)
@@ -88,7 +106,9 @@ namespace twitchBot
             label_connection_status.Text = "connected";
             client.SendMessage(Properties.Settings.Default.channel, Properties.Settings.Default.hello_conn_msg);
         }
+        #endregion
 
+        // onNewSubscriber в работе не проверялся
         private void onNewSubscriber(object sender, OnNewSubscriberArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;
@@ -96,6 +116,7 @@ namespace twitchBot
             client.SendMessage(Properties.Settings.Default.channel, "Спасибо за подписку, " + e.Subscriber.DisplayName + "!");
         }
 
+        #region disconnect
         private void button_disconnect_Click(object sender, EventArgs e)
         {
             if (connection_status == true)
@@ -124,9 +145,10 @@ namespace twitchBot
             client.OnMessageReceived -= new EventHandler<OnMessageReceivedArgs>(onMessageReceived);
             client.OnConnected -= new EventHandler<OnConnectedArgs>(onConnected);
         }
+        #endregion
 
-        //пригодится в процедуре ниже
-        string phrase_to_sound;
+        
+        string phrase_to_sound; //исчпользуется в onMessageReceived - radioButton_say.Checked
         private void onMessageReceived(object sender, OnMessageReceivedArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;
@@ -157,8 +179,6 @@ namespace twitchBot
                     }
                     if (radioButton_all.Checked == true)
                     {
-                        /*phrase_to_sound = e.ChatMessage.Message;
-                        speech.Speak(phrase_to_sound);*/
                         speech.Speak(e.ChatMessage.Message);
                     }
                 }
@@ -182,9 +202,9 @@ namespace twitchBot
 
             //реакция на плохие слова
             if (bad_words.Any(e.ChatMessage.Message.Contains)) client.TimeoutUser(e.ChatMessage.Channel, e.ChatMessage.Username, TimeSpan.FromMinutes(10), "Нецензурная брань");
-            //client.SendMessage(Properties.Settings.Default.channel, "проверка мат фильтра");
         }
 
+        #region Команды бота
         static string RollIQ(string user)
         {
             Random rnd = new Random();
@@ -232,7 +252,7 @@ namespace twitchBot
             }
             return msg;
         }
-
+        #endregion
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -243,6 +263,7 @@ namespace twitchBot
             }
             else
             {
+                UnregisterHotKey(this.Handle, 0);
                 Properties.Settings.Default.volume_value = speech.Volume;
                 Properties.Settings.Default.Save();
                 Application.Exit();
@@ -268,6 +289,7 @@ namespace twitchBot
             }
         }
 
+        #region Отправка сообщений от имени бота
         private void button_message_like_bot_Click(object sender, EventArgs e)
         {
             if (client.IsConnected && textBox_message_like_bot.Text != "")
@@ -286,6 +308,7 @@ namespace twitchBot
                 button_message_like_bot_Click(sender, e);
             }
         }
+        #endregion
 
         private void button_open_settings_Click(object sender, EventArgs e)
         {
@@ -301,11 +324,11 @@ namespace twitchBot
             }
         }
 
+        #region Настройка озвучки сообщений
         private void button_stop_speech_Click(object sender, EventArgs e)
         {
             speech.SpeakAsyncCancelAll();
         }
-
 
         private void trackBar_volume_ValueChanged(object sender, EventArgs e)
         {
@@ -327,6 +350,19 @@ namespace twitchBot
         {
             if (checkBox_allow_voice.Checked == true) sound_voice_status = "Озвучка сообщений включена";
             else sound_voice_status = "Озвучка сообщений выключена";
+        }
+        #endregion
+
+        //hotkey ctrl+F1 для остановки воспроизведения текущего сообщения
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+
+            if (m.Msg == 0x0312)
+            {
+                //textBox_output_info.AppendText("hotkey test" + Environment.NewLine);
+                speech.SpeakAsyncCancelAll();
+            }
         }
 
         private void Form1_Shown(object sender, EventArgs e)
